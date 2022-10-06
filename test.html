@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <style>
+        .box1, .box2{
+            position; relative;
+            height:100px;
+            width: 100px;
+            background: red;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>    
+    <script>
+        gsap.to('.box1', {
+            x: 400,
+            duration: 3
+        })
+    </script>
+</body>
+</html>
